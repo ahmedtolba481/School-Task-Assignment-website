@@ -1,11 +1,50 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-        <iframe src="../navigation/admin_nav.html" style="width: 100%; height: 56px; border: none;"></iframe>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edit Task</title>
+  </head>
+  <body>
+    <iframe
+      src="../navigation/admin_nav.html"
+      style="width: 100%; height: 56px; border: none"
+    ></iframe>
+    <section>
+      <br /><br /><br />
+      <h1 align="center">Edit Task</h1>
+      <form align="center">
+        <label>Task Id:</label>
+        <input
+          type="number"
+          name="task-id"
+          placeholder="Task Id"
+          value="101"
+          readonly
+        />
+        <br /><br />
+        <label>Task Title:</label>
+        <input
+          type="text"
+          name="task-title"
+          placeholder="Task Title"
+          value="Math Homework"
+          required
+        />
+        <br /><br />
+        <label>Priority</label>
+        <select>
+          <option value="Low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high" >High</option>
+        </select>
+        <br /><br />
+        <label>Decription:</label>
+        <br />
+        <textarea rows="8" cols="30">Complete chapter 5 exercises</textarea>
+        <br /><br />
+        <input type="submit" value="Update Task" />
+      </form>
+    </section>
+  </body>
 </html>

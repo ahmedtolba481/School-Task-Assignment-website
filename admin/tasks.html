@@ -1,11 +1,61 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-        <iframe src="../navigation/admin_nav.html" style="width: 100%; height: 56px; border: none;"></iframe>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>All Tasks</title>
+  </head>
+  <body>
+    <iframe
+      src="../navigation/admin_nav.html"
+      style="width: 100%; height: 56px; border: none"
+    ></iframe>
+
+    <h1 align="center">All Tasks</h1>
+
+    <div align="center">
+      <a href="add-task.html">Add New Task</a>
+    </div>
+    <br />
+
+    <table border="1" width="80%" align="center" cellpadding="10">
+      <tr>
+        <th>Task ID</th>
+        <th>Title</th>
+        <th>Priority</th>
+        <th>Status</th>
+        <th>Actions</th>
+      </tr>
+      <tr>
+        <td>101</td>
+        <td>Math Homework</td>
+        <td>High</td>
+        <td>In Progress</td>
+        <td>
+          <a href="edit-task.html">Edit</a> |
+          <a href="#">Delete</a>
+        </td>
+      </tr>
+      <tr>
+        <td>102</td>
+        <td>Science Report</td>
+        <td>Medium</td>
+        <td>Pending</td>
+        <td>
+          <a href="edit-task.html">Edit</a> |
+          <a href="#">Delete</a>
+        </td>
+      </tr>
+      <tr>
+        <td>103</td>
+        <td>History Essay</td>
+        <td>Low</td>
+        <td>Completed</td>
+        <td>
+          <a href="edit-task.html">Edit</a> |
+          <a href="#">Delete</a>
+        </td>
+      </tr>
+    </table>
+  </body>
 </html>
